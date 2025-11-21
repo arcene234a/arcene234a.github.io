@@ -101,15 +101,12 @@ function updateGame() {
                 circle.x = 0;
             }
             if (circle.x + circle.radius < 0) {
-    // If it goes off the left, move it to the right edge
     circle.x = canvas.width + circle.radius;
 }
 if (circle.y + circle.radius < 0) {
-    // If it goes off the top, move it to the bottom edge
     circle.y = canvas.height + circle.radius;
 }
 if (circle.y - circle.radius > canvas.height) {
-    // If it goes off the bottom, move it to the top edge
     circle.y = -circle.radius;
 }
 
